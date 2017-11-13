@@ -1,6 +1,6 @@
 <ul class="msgs" #chatMsgs>
   <li class="bot">
-    ⏰  Hello there, TiBot here. Ask me something about date and time!
+  Bonjour,  interrogez-moi sur les programmes Télé du jour !
   </li>
   <li
     *ngFor="let input of msgs"
@@ -15,6 +15,6 @@
 
 <div class="chat-input">
   <form (submit)="onSubmit()">
-    <input [(ngModel)]="userMsg" name="userMsg" class="chat-input-text" type="text" placeholder="Ask something...">
+    <input [(ngModel)]="userMsg" name="userMsg" class="chat-input-text" type="text" placeholder="Que voulez vous savoir...?">
   </form>
 </div>

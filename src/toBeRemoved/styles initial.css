@@ -32,8 +32,7 @@ body {
   max-width:75%;
   width: auto;
   line-height: 18px;
-  align-self: flex-start;
-  margin-left: 70px;
+  align-self: flex-end;
 }
 
 /* classe pour message bot */
@@ -42,7 +41,6 @@ body {
   color: #fff;
   align-self: flex-start;
   border-radius: 10px;
-  margin-left: 10px;
 }
 
 .msgs li.bot span {

@@ -13,7 +13,6 @@ import 'rxjs/add/observable/range';
 import 'rxjs/add/observable/timer';
 import 'rxjs/add/observable/interval';
 import 'rxjs/add/observable/dom/webSocket';
-import { speak } from './speak.js';
 
 import * as moment from 'moment';
 import 'moment-timezone';
@@ -60,10 +59,7 @@ export class AppComponent implements OnInit, OnDestroy {
       )
       .delayWhen(input => Observable.interval(100 + input.msg.length * 10))
       .subscribe(
-        (msg) => {this.pushMsg(msg);
-        console.log(msg.msg);
-        speak(msg.msg);
-       }
+        (msg) => this.pushMsg(msg)
       );
   }
 
@@ -100,5 +96,3 @@ export class AppComponent implements OnInit, OnDestroy {
     this.ngUnsubscribe$.complete();
   }
 }
-
-

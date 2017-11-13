@@ -1,0 +1,51 @@
+
+.b-agent-demo {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    width: 100%;
+    height: auto;
+    color: #2b313f;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.b-agent-demo .b-agent-demo_header {
+    min-height: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2b303e;
+    display: table;
+}
+
+.b-agent-demo .b-agent-demo_header-agent-name {
+    padding-left: 80px;
+    font-size: 18px;
+    color: white;
+}
+
+.b-agent-demo .b-agent-demo_header-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.b-agent-demo .b-agent-demo_header-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
